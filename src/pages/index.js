@@ -1,17 +1,16 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
+import Image from "../components/Image"
 
-import intro from '../assets/images/intro.jpg';
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <Layout activeLink="home">
     <section className="page-section clearfix">
       <div className="container">
         <div className="intro">
-          <img
+          <Image
             className="intro-img img-fluid mb-3 mb-lg-0 rounded"
-            src={intro}
-            alt=""
+            fileName="intro.jpg"
+            alt="Smoke With Us"
           />
           <div className="intro-text left-0 text-center bg-faded p-5 rounded">
             <h2 className="section-heading mb-4">

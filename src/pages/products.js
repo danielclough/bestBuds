@@ -1,10 +1,6 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
-
-import product1 from '../assets/images/products-01.jpg';
-import product2 from '../assets/images/products-02.jpg';
-import product3 from '../assets/images/products-03.jpg';
+import Image from "../components/Image"
 
 const IndexPage = () => (
   <Layout activeLink="products">
@@ -18,14 +14,14 @@ const IndexPage = () => (
                   Organic Pleasure
                 </span>
                 <span className="section-heading-lower">
-                  Bomb Ass Buds
+                  Bomb Buds
                 </span>
               </h2>
             </div>
           </div>
-          <img
+          <Image
             className="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0"
-            src={product1}
+            fileName="products-01.jpg"
             alt=""
           />
           <div className="product-item-description d-flex mr-auto">
@@ -59,9 +55,9 @@ const IndexPage = () => (
               </h2>
             </div>
           </div>
-          <img
+          <Image
             className="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0"
-            src={product2}
+            fileName="products-02.jpg"
             alt=""
           />
           <div className="product-item-description d-flex ml-auto">
@@ -93,9 +89,9 @@ const IndexPage = () => (
               </h2>
             </div>
           </div>
-          <img
+          <Image
             className="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0"
-            src={product3}
+            fileName="products-03.jpg"
             alt=""
           />
           <div className="product-item-description d-flex mr-auto">

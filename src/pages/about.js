@@ -1,15 +1,14 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
+import Image from "../components/Image"
 
-import about from '../assets/images/about.jpg';
 const IndexPage = () => (
   <Layout activeLink="about">
     <section className="page-section about-heading">
       <div className="container">
-        <img
+        <Image
           className="img-fluid rounded about-heading-img mb-3 mb-lg-0"
-          src={about}
+          fileName="about.jpg"
           alt=""
         />
         <div className="about-heading-content">
